@@ -8,7 +8,10 @@ import {
   Star, 
   Users, 
   Clock,
-  CheckCircle
+  CheckCircle,
+  GraduationCap,
+  Hand,
+  Sparkles
 } from "lucide-react";
 
 const services = [
@@ -16,8 +19,7 @@ const services = [
     icon: Star,
     title: "Personal Horoscope Reading",
     description: "Comprehensive birth chart analysis with detailed predictions for your future",
-    features: ["Birth chart analysis", "Personality insights", "Career guidance", "Health predictions"],
-    price: "From LKR 2,500",
+    features: ["Birth chart analysis", "Personality insights", "Life predictions", "Health guidance"],
     popular: true
   },
   {
@@ -25,15 +27,27 @@ const services = [
     title: "Love & Marriage Compatibility",
     description: "Discover relationship compatibility and find your perfect match through astrology",
     features: ["Partner compatibility", "Marriage timing", "Relationship advice", "Family harmony"],
-    price: "From LKR 3,500",
+    popular: false
+  },
+  {
+    icon: GraduationCap,
+    title: "Career & Education Path Guidance",
+    description: "Professional guidance for career decisions and educational pursuits",
+    features: ["Career direction", "Education path", "Skill development", "Success timing"],
     popular: false
   },
   {
     icon: Briefcase,
-    title: "Career & Business Astrology",
-    description: "Professional guidance for career decisions and business ventures",
-    features: ["Career direction", "Business timing", "Investment advice", "Success periods"],
-    price: "From LKR 4,000",
+    title: "Business Astrology",
+    description: "Astrological guidance for business ventures and commercial decisions",
+    features: ["Business timing", "Investment advice", "Partnership compatibility", "Growth periods"],
+    popular: false
+  },
+  {
+    icon: Hand,
+    title: "Future Palm Reading",
+    description: "Traditional palm reading to reveal your future path and life events",
+    features: ["Life line analysis", "Future predictions", "Career prospects", "Health insights"],
     popular: false
   },
   {
@@ -41,7 +55,6 @@ const services = [
     title: "Property & Land Consultation",
     description: "Astrological guidance for property purchases and construction timing",
     features: ["Property selection", "Construction timing", "Vastu consultation", "Land evaluation"],
-    price: "From LKR 3,000",
     popular: false
   },
   {
@@ -49,7 +62,6 @@ const services = [
     title: "Muhurat & Timing",
     description: "Auspicious timing for important life events and ceremonies",
     features: ["Wedding muhurat", "Business opening", "Travel timing", "Religious ceremonies"],
-    price: "From LKR 1,500",
     popular: false
   },
   {
@@ -57,7 +69,13 @@ const services = [
     title: "Family Astrology Sessions",
     description: "Complete family horoscope analysis and generational insights",
     features: ["Family compatibility", "Child naming", "Education guidance", "Health analysis"],
-    price: "From LKR 5,000",
+    popular: false
+  },
+  {
+    icon: Sparkles,
+    title: "Spiritual Healing",
+    description: "Energy healing and spiritual guidance for inner peace and wellness",
+    features: ["Energy cleansing", "Chakra balancing", "Spiritual guidance", "Meditation advice"],
     popular: false
   }
 ];
@@ -111,9 +129,8 @@ export const Services = () => {
                   }`}>
                     <service.icon className="w-6 h-6" />
                   </div>
-                  <div>
-                    <CardTitle className="text-lg mb-1">{service.title}</CardTitle>
-                    <div className="text-accent font-semibold">{service.price}</div>
+                  <div className="flex-1">
+                    <CardTitle className="text-lg">{service.title}</CardTitle>
                   </div>
                 </div>
                 <CardDescription className="text-base">
