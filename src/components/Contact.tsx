@@ -18,21 +18,21 @@ const contactMethods = [
     icon: Phone,
     title: "Phone Consultation",
     description: "Speak directly with our astrologers",
-    value: "+94 77 123 4567",
+    value: "+94 77 758 1811",
     action: "Call Now"
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
     description: "Quick consultation via WhatsApp",
-    value: "+94 77 123 4567",
+    value: "+94 76 387 8229",
     action: "Chat Now"
   },
   {
     icon: Mail,
     title: "Email Consultation",
     description: "Detailed written reports via email",
-    value: "info@atroguide.lk",
+    value: "Charithmudalige@sjp.ac.lk",
     action: "Email Us"
   }
 ];
@@ -198,8 +198,8 @@ export const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-4">
-                  123 Temple Road<br />
-                  Colombo 07<br />
+                  Vishwakalawa Road<br />
+                  Piliyandala<br />
                   Sri Lanka
                 </p>
                 <Button variant="outline" size="sm" className="w-full">
