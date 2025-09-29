@@ -53,7 +53,7 @@ export const Header = () => {
           <div className="hidden md:flex items-center gap-3">
             <Button variant="ghost" size="sm" className="text-accent">
               <Phone className="w-4 h-4 mr-2" />
-              +94 77 123 4567
+              +94 77 758 1811
             </Button>
             <Button variant="cosmic" size="sm">
               <Calendar className="w-4 h-4 mr-2" />
@@ -93,7 +93,7 @@ export const Header = () => {
               <div className="pt-4 px-4 space-y-2">
                 <Button variant="ghost" size="sm" className="w-full text-accent justify-start">
                   <Phone className="w-4 h-4 mr-2" />
-                  +94 77 123 4567
+                  +94 77 758 1811
                 </Button>
                 <Button variant="cosmic" size="sm" className="w-full">
                   <Sparkles className="w-4 h-4 mr-2" />
