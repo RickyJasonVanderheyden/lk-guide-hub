@@ -89,9 +89,11 @@ export const About = () => {
                 <BookOpen className="w-5 h-5 mr-2" />
                 Our Story
               </Button>
-              <Button variant="mystical" size="lg">
-                <Users className="w-5 h-5 mr-2" />
-                Meet Our Team
+              <Button variant="mystical" size="lg" asChild>
+                <a href="/astrologer">
+                  <Users className="w-5 h-5 mr-2" />
+                  Meet Your Astrologer
+                </a>
               </Button>
             </div>
           </div>
@@ -131,6 +133,22 @@ export const About = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Meet Your Astrologer Section */}
+        <div className="text-center mb-16">
+          <h3 className="text-3xl font-bold mb-6 bg-gradient-to-br from-foreground to-primary bg-clip-text text-transparent">
+            Meet Your Astrologer
+          </h3>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            Discover the expertise and wisdom behind AstroGuide's authentic astrological guidance.
+          </p>
+          <Button variant="cosmic" size="lg" asChild>
+            <a href="/astrologer">
+              <Award className="w-5 h-5 mr-2" />
+              Learn About Dr. Charith Mudalige
+            </a>
+          </Button>
         </div>
 
         {/* Values Grid */}
